@@ -209,6 +209,7 @@ img{
     gap: 1.5rem;
 }
 
+
 .header{
     width: 100%;
     position: fixed;
@@ -965,7 +966,7 @@ display: none;
 	opacity: 1;
 }
 .gallery-item.effect-zoe:hover .gallery-image {
-    opacity: 0.5;
+    opacity: 1;
 }
 .gallery-item.effect-zoe:hover .image-content,
 .gallery-item.effect-zoe:hover h3,
@@ -1042,6 +1043,14 @@ body.dark-theme .gallery-item h3 {
 .contact_title{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
+}
+
+.contact_title a{
+    color: #000;
+}
+
+.contact_title a:hover{
+    color: var(--first-color-lighter);
 }
 
 .contact_subtitle{
@@ -1448,6 +1457,16 @@ body.dark-theme .gallery-item h3 {
         } 
 
     }
+}
+
+@media screen and (min-width: 768px){
+    
+   .contact_info_temp{
+    display: flex;
+    justify-content: space-between;
+   }
+
+   
 }
 
 /* For large devices */
