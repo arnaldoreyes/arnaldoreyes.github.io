@@ -1,17 +1,1317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Arnaldo R.</title>
+    <title>Arnaldo Reyes</title>
 </head>
+
 <body>
-    
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">
+                <img class="nav_logo-img" src="./img/LOGO.png" alt="">
+                <span class="nav_logo-title">Arnaldo Reyes</span>
+            </a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link" >
+                            <i class="las la-home nav_icon"></i><span class="js-translate" data-string="nav_home">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="las la-user-circle nav_icon"></i><span class="js-translate" data-string="nav_about">About</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="las la-file-code nav_icon"></i><span class="js-translate" data-string="nav_skills">Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#services" class="nav_link">
+                            <i class="las la-briefcase nav_icon"></i><span class="js-translate" data-string="nav_services">Services</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portfolio" class="nav_link">
+                            <i class="las la-image nav_icon"></i><span class="js-translate" data-string="nav_portfolio">Portfolio</span> 
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">
+                            <i class="las la-comment-alt nav_icon"></i><span class="js-translate" data-string="nav_contact">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <i class="las la-times nav_close" id="nav-close"></i>
+            </div>
+
+            <div class="nav_btns">
+
+                <div class="change-language">
+                    <button class="language-button" data-type="en"  id="language-button">EN</button>
+                    <i class="ri-global-line language-icon"></i>
+                </div>
+                
+                <!-- Theme change button -->
+                 <i class="ri-moon-line change-theme" id="theme-button"></i>
+           
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="ri-apps-line"></i>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        <a href="https://www.linkedin.com/in/arnaldo-reyes-3a8888181/" target="_blank"
+                            class="home_social-icon">
+                            <i class="lab la-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/arnaldoreyes" target="_blank" class="home_social-icon">
+                            <i class="lab la-github"></i>
+                        </a>
+                    </div>
+
+                    <div class="home_img">
+                        <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+
+                                <image class="home_blob-img" x="12" y="18" xlink:href="./img/perfil.png" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home_data">
+                        <h1 class="home_title js-translate"  data-string="home_title">Hi! I'm Arnaldo. 👋🏽</h1>
+                        <h3 class="home_subtitle js-translate"  data-string="home_subtitle">Front-End developer</h3>
+                        <p class="home_description js-translate" data-string="home_description">An enthusiastic coder, passionate about discovering, experimenting and learning about the awesome world of web development.</p>
+                        <a href="#contact" class="button button--flex js-translate"  data-string="home_button">
+                            Contact me<i class="las la-comment-alt button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home_scroll">
+                    <a href="#about" class="home_scroll-button button--flex">
+                        <i class="las la-mouse home_scroll-mouse"></i>
+                        </i><span class="home_scroll-name js-translate"  data-string="home_scroll">Scroll down</span>
+                        <i class="las la-arrow-circle-down home_scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section_title js-translate" data-string="about_title">About Me</h2>
+            <span class="section_subtitle js-translate" data-string="about_subtitle">My introduction</span>
+
+            <div class="about_container container grid">
+                <img src="./img/about.jpg" alt="" class="about_img">
+
+                <div class="about_data">
+                    <p class="about_description js-translate" data-string="about_description">I am a 27 year old man from Venezuela, graduated as an industrial engineer. I started learning frontend development in 2021 and I am looking to put into practice, improve my knowledge and learn about the various technologies, libraries and frameworks. 
+                    </p>
+
+                    <!-- <div class="about_info">
+                        <div>
+                            <span class="about_info-title">08+</span>
+                            <span class="about_info-name">Years <br> experience</span>
+                        </div>
+
+                        <div>
+                            <span class="about_info-title">20+</span>
+                            <span class="about_info-name">Completed <br> project</span>
+                        </div>
+
+                        <div>
+                            <span class="about_info-title">08+</span>
+                            <span class="about_info-name">Companies <br> worked</span>
+                        </div>
+                    </div> -->
+
+                    <div class="about_buttons">
+                        <a download="" href="./pdf/Arnaldo-Reyes-CV.pdf" class="button button--flex">
+                            <span class="js-translate" data-string="about_button">Download CV</span><i class="ri-download-line button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section_title js-translate" data-string="skills_title">Skills</h2>
+            <span class="section_subtitle js-translate" data-string="skills_subtitle">What technologies do I use?</span>
+
+            <div class="skills_container container grid">
+                <div>
+                    <!--==================== SKILLS 1 ====================-->
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="ri-braces-line skills_icon"></i>
 
 
+                            <div>
+                                <h1 class="skills_title js-translate" data-string="skills_frontend_title">Frontend developer</h1>
+                                <!-- <span class="skills_subtitle js-translate" data-string="skills_frontend_subtitle">Less than 1 year</span> -->
+                            </div>
+
+                            <i class="las la-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skill_set">
+
+                            <ul class="skills_list grid">
+
+                                <li class="skill_item">
+                                    <div class="skills">
+                                        <i class="lab la-html5 skill_icon"></i>
+                                        <span class="text-logo">HTML</span>
+                                    </div>
+                                </li>
+                                <li class="skill_item">
+                                    <div class="skills">
+                                        <i class="lab la-css3-alt skill_icon"></i>
+                                        <span class="text-logo">CSS</span>
+                                    </div>
+                                </li>
+                                <li class="skill_item">
+                                    <div class="skills">
+                                        <i class="lab la-js-square skill_icon"></i>
+                                        <span class="text-logo">JavaScript</span>
+                                    </div>
+                                </li>
+                                <li class="skill_item skill_img">
+                                    <div class="skills">
+                                        <img src="./img/logos/jQuery.png" alt="" class="skill_icon-img">
+                                        <span class="text-logo">jQuery</span>
+                                    </div>
+                                </li>
+                                <li class="skill_item">
+                                    <div class="skills">
+                                        <i class="lab la-sass skill_icon"></i>
+                                        <span class="text-logo">Sass</span>
+                                    </div>
+                                </li>
+                                <li class="skill_item">
+                                    <div class="skills">
+                                        <i class="lab la-bootstrap skill_icon"></i>
+                                        <span class="text-logo">Bootstrap</span>
+                                    </div>
+                                </li>
+                                <li class="skill_item skill-img">
+                                    <div class="skills">
+                                        <img src="/img/logos/tailwind.png" alt="" class="skill_icon-img">
+                                        <span class="text-logo">Tailwind</span>
+                                    </div>
+                                </li>
+                                <li class="skill_item">
+                                    <div class="skills">
+                                        <i class="lab la-wordpress skill_icon"></i>
+                                        <span class="text-logo">Wordpress</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <!--==================== SKILLS 2 ====================-->
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="las la-server skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title js-translate" data-string="skills_backend_title">Backend developer</h1>
+                                <!-- <span class="skills_subtitle js-translate" data-string="skills_backend_subtitle">Less than 1 year</span> -->
+                            </div>
+
+                            <i class="las la-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skill_set">
+
+                            <ul class="skills_list grid">
+
+                                <li class="skill_item">
+                                    <div class="skills">
+                                        <i class="lab la-php skill_icon"></i>
+                                        <span class="text-logo">PHP</span>
+                                    </div>
+                                </li>
+                                <li class="skill_item">
+                                    <div class="skills">
+                                        <i class="ri-database-2-line skill_icon"></i>
+                                        <span class="text-logo">SQL</span>
+                                    </div>
+                                </li>
+                                <li class="skill_item skill_img">
+                                    <div class="skills">
+                                        <img src="./img/logos/mysql.png" alt="" class="skill_icon-img">
+                                        <span class="text-logo">MySQL</span>
+                                    </div>
+                                </li>
+                                <li class="skill_item">
+                                    <div class="skills">
+                                        <i class="lab la-laravel skill_icon"></i>
+                                        <span class="text-logo">Laravel</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--==================== SKILLS 3 ====================-->
+                <div class="skills_content skills_close">
+                    <div class="skills_header">
+                        <i class="las la-swatchbook skills_icon"></i>
+
+
+                        <div>
+                            <h1 class="skills_title js-translate" data-string="skills_designer_title">Designer</h1>
+                            <!-- <span class="skills_subtitle js-translate" data-string="skills_designer_subtitle">Less than 1 year</span> -->
+                        </div>
+
+                        <i class="las la-angle-down skills_arrow"></i>
+                    </div>
+
+                    <div class="skill_set">
+
+                        <ul class="skills_list grid">
+
+                            <li class="skill_item">
+                                <div class="skills">
+                                    <i class="lab la-figma skill_icon"></i>
+                                    <span class="text-logo">Figma</span>
+                                </div>
+                            </li>
+
+                            <li class="skill_item skill_img">
+                                <div class="skills">
+                                    <img src="./img/logos/photoshop.png" alt="" class="skill_icon-img">
+                                    <span class="text-logo">Photoshop</span>
+                                </div>
+                            </li>
+                            <li class="skill_item skill-img">
+                                <div class="skills">
+                                    <img src="./img/logos/illustrator.png" alt="" class="skill_icon-img">
+                                    <span class="text-logo">Illustrator</span>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!--==================== SKILLS 4 ====================-->
+                <div class="skills_content skills_close">
+                    <div class="skills_header">
+                        <i class="las la-laptop-code skills_icon"></i>
+
+
+                        <div>
+                            <h1 class="skills_title js-translate" data-string="skills_tools_title">Tools</h1>
+                            <!-- <span class="skills_subtitle js-translate" data-string="skills_tools_title">Less than 1 year</span> -->
+                        </div>
+
+                        <i class="las la-angle-down skills_arrow"></i>
+                    </div>
+
+                    <div class="skill_set">
+
+                        <ul class="skills_list grid">
+
+                            <li class="skill_item skill_img">
+                                <div class="skills">
+                                    <img src="./img/logos/visual-studio.png" alt="" class="skill_icon-img">
+                                    <span class="text-logo">VS Code</span>
+                                </div>
+                            </li>
+
+                            <li class="skill_item skill_img">
+                                <div class="skills">
+                                    <img src="./img/logos/notion.png" alt="" class="skill_icon-img">
+                                    <span class="text-logo">Notion</span>
+                                </div>
+                            </li>
+
+                            <li class="skill_item">
+                                <div class="skills">
+                                    <i class="lab la-git skill_icon"></i>
+                                    <span class="text-logo">Git</span>
+                                </div>
+                            </li>
+
+                            <li class="skill_item skill_img">
+                                <div class="skills">
+                                    <img src="./img/logos/laragon.png" alt="" class="skill_icon-img">
+                                    <span class="text-logo">Laragon</span>
+                                </div>
+                            </li>
+
+                            <li class="skill_item">
+                                <div class="skills">
+                                    <i class="las la-terminal skill_icon"></i>
+                                    <span class="text-logo">Terminal</span>
+                                </div>
+                            </li>
+
+                            <li class="skill_item">
+                                <div class="skills">
+                                    <i class="lab la-npm skill_icon"></i>
+                                    <span class="text-logo">NPM</span>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+
+            </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section">
+            <h2 class="section_title js-translate" data-string="qualification_title">Qualification</h2>
+            <span class="section_subtitle js-translate" data-string="qualification_subtitle">My personal journey</span>
+
+            <div class="qualification_container container">
+                <div class="qualification_tabs">
+                    <div class="qualification_button button--flex qualification_active" data-target="#education">
+                        <i class="las la-graduation-cap qualification_icon"></i>
+                        <span class="js-translate" data-string="qualification_education">Education</span>
+                    </div>
+
+                    <div class="qualification_button button--flex" data-target="#work">
+                        <i class="las la-briefcase qualification_icon"></i>
+                        <span class="js-translate" data-string="qualification_work">Work</span>
+                    </div>
+                </div>
+
+                <div class="qualification_sections">
+                    <!--============================== QUALIFICATION CONTENT 1 ==============================-->
+                    <div class="qualification_content qualification_active card6" data-content id="education">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title js-translate" data-string="qualification_title_1">Industrial Engineer</h3>
+                                <span class="qualification_subtitle js-translate">Universidad Nacional Experimental de Guayana</span>
+                                <div class="qualification_map">
+                                    <i class="las la-map-marker"></i>
+                                    Venezuela
+                                </div>
+                                <div class="qualification_calendar">
+                                    <i class="las la-calendar"></i>
+                                    2012 - 2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification_data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+
+                            <div>
+                                <a href="https://platzi.com/p/arnaldor72/curso/1557-git-github/diploma/detalle/"
+                                    target="_blank">
+                                    <h3 class="qualification_title js-translate" data-string="qualification_title_2">Git and GitHub Professional Course</h3>
+                                </a>
+                                <span class="qualification_subtitle">Platzi</span>
+                                <div class="qualification_calendar">
+                                    <i class="las la-calendar"></i>
+                                    Aug. 2021
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification_data">
+                            <div>
+                                <a href="https://www.freecodecamp.org/certification/arnaldoreyes/responsive-web-design"
+                                    target="_blank">
+                                    <h3 class="qualification_title js-translate" data-string="qualification_title_3">Diseño Web Responsivo</h3>
+                                </a>
+                                <span class="qualification_subtitle">freeCodeCamp</span>
+                                <div class="qualification_calendar">
+                                    <i class="las la-calendar"></i>
+                                    Sep. 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 4 ====================-->
+                        <div class="qualification_data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+
+                            <div>
+                                <a href="https://platzi.com/p/arnaldor72/curso/2008-html-css/diploma/detalle/"
+                                    target="_blank">
+                                    <h3 class="qualification_title js-translate" data-string="qualification_title_4">HTML and CSS Definitive Course</h3>
+                                </a>
+                                <span class="qualification_subtitle">Platzi</span>
+                                <div class="qualification_calendar">
+                                    <i class="las la-calendar"></i>
+                                    Mar. 2022
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 5 ====================-->
+                        <div class="qualification_data">
+                            <div>
+                                <a href="https://platzi.com/p/arnaldor72/curso/1814-basico-javascript/diploma/detalle/"
+                                    target="_blank">
+                                    <h3 class="qualification_title js-translate" data-string="qualification_title_5">Basic JavaScript Course</h3>
+                                </a>
+                                <span class="qualification_subtitle">Platzi</span>
+                                <div class="qualification_calendar">
+                                    <i class="las la-calendar"></i>
+                                    Mar. 2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+
+                        <span id="dots6"></span>
+
+
+                        <div id="more6">
+
+                            <!--==================== QUALIFICATION 6 ====================-->
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/2461-arrays/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_6">Array Manipulation in JavaScript Course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Mar. 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 7 ====================-->
+                            <div class="qualification_data">
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/1331-bootstrap/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_7">Bootstrap 4 Course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Mar. 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 8 ====================-->
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/2702-tailwind/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_8">Tailwind 2 & 3 Basic Course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Mar. 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 9 ====================-->
+                            <div class="qualification_data">
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/1230-photoshop-basico/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_9">Photoshop Basic Course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Mar. 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 10 ====================-->
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/1130-illustrator/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_10">Illustrator Course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Mar. 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 11 ====================-->
+                            <div class="qualification_data">
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/2534-wordpress-blog/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_11">Blogging with WordPress Course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        May. 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 12 ====================-->
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <a href="https://www.efset.org/cert/gNbJbm" target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_12">EF SET English Certificate 74/100 (C2 Proficient)</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        May. 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 13 ====================-->
+                            <div class="qualification_data">
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/3213-javascript-closures-scope/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_13">JavaScript Closures and Scope Course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Jun. 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 14 ====================-->
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/1815-ecmascript-6/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_14">ECMAScript 6+ Course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Jun. 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 15 ====================-->
+                            <div class="qualification_data">
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/1566-bd/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_15">Database Fundamentals Course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Jul. 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 16 ====================-->
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/1272-sql-mysql/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_16">Introduction to MySQL course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Jul. 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 17 ====================-->
+                            <div class="qualification_data">
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/2646-php/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_17">Basic PHP Course: Installation, Fundamentals and Operators</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Jul. 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 18 ====================-->
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/2794-php-arreglos-funciones/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_18">Basic PHP Course: Arrays, Functions and Control Structures</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Jul. 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 19 ====================-->
+                            <div class="qualification_data">
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/2516-php-practico/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_19">PHP Practical Course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Jul. 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 20 ====================-->
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/1638-api-rest/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_20">REST API with PHP course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Aug. 2022
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 21 ====================-->
+                            <div class="qualification_data">
+
+                                <div>
+                                    <a href="https://platzi.com/p/arnaldor72/curso/1842-intro-laravel-2020/diploma/detalle/"
+                                        target="_blank">
+                                        <h3 class="qualification_title js-translate" data-string="qualification_title_21">Introduction to Laravel course</h3>
+                                    </a>
+                                    <span class="qualification_subtitle">Platzi</span>
+                                    <div class="qualification_calendar">
+                                        <i class="las la-calendar"></i>
+                                        Aug. 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <!-- <span class="qualification_line"></span> -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="qualification_show">
+                            <button onclick="myFunction6(event)" id="button6" class="button" >
+                                Show more 
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                    <!--============================== QUALIFICATION CONTENT 2 ==============================-->
+                    <div class="qualification_content" data-content id="work">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">Freelance</h3>
+                                <span class="qualification_subtitle"></span>
+                                <div class="qualification_calendar">
+                                    <i class="las la-calendar"></i>
+                                    2021 - 2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <!-- <span class="qualification_line"></span> -->
+                            </div>
+
+                        </div>
+
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <!-- <div class="qualification_data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification_title">Frontend developer</h3>
+                                <span class="qualification_subtitle">Apple Inc - Spain</span>
+                                <div class="qualification_calendar">
+                                    <i class="las la-calendar"></i>
+                                    2018 - 2020
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <!-- <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">Ui Designer</h3>
+                                <span class="qualification_subtitle">Figma - Spain</span>
+                                <div class="qualification_calendar">
+                                    <i class="las la-calendar"></i>
+                                    2017 - 2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+            <h2 class="section_title js-translate" data-string="services_title">Services</h2>
+            <span class="section_subtitle js-translate" data-string="services_subtitle">What i offer</span>
+
+            <div class="services_container container grid">
+                <!--==================== SERVICES 1 ====================-->
+                <div class="services_content">
+                    <div>
+                        <i class="las la-laptop-code services_icon"></i>
+                        <h3 class="services_title js-translate" data-string="services_frontend_title">Front-end <br> Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services_button">
+                        <span class="js-translate" data-string="services_view_more_1">View More</span>
+                        <i class="ri-arrow-right-line button_icon"></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_modal-title js-translate" data-string="services_frontend_modal">Front-End Developer</h4>
+                            <i class="las la-times services_modal-close"></i>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="las la-check-circle services_modal--icon"></i>
+                                    <p class="js-translate" data-string="services_responsive">Responsive Website Design.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="las la-check-circle services_modal--icon"></i>
+                                    <p class="js-translate" data-string="services_optimizing">Optimizing the user experience.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="las la-check-circle services_modal--icon"></i>
+                                    <p class="js-translate" data-string="services_apis">Using APIs and RESTful Services.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="las la-check-circle services_modal--icon"></i>
+                                    <p class="js-translate" data-string="services_conversion">PSD/Ai to HTML Conversion.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== SERVICES 2 ====================-->
+                <div class="services_content">
+                    <div>
+                        <i class="las la-terminal services_icon"></i>
+                        <h3 class="services_title js-translate" data-string="services_backend_title">Backend <br> Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services_button">
+                        <span class="js-translate" data-string="services_view_more_2">View More</span>  
+                        <i class="ri-arrow-right-line button_icon"></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_modal-title js-translate" data-string="services_backend_modal">Backend Developer</h4>
+                            <i class="las la-times services_modal-close"></i>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="las la-check-circle services_modal--icon"></i>
+                                    <p class="js-translate" data-string="services_understanding">Understanding of design parameters and criteria, to translate requirements into an operational program.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="las la-check-circle services_modal--icon"></i>
+                                    <p class="js-translate" data-string="services_knowledge">Knowledge of MySQL database management.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="las la-check-circle services_modal--icon"></i>
+                                    <p class="js-translate" data-string="services_establishes">Establishes connections between databases for front-end operations.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="las la-check-circle services_modal--icon"></i>
+                                    <p class="js-translate" data-string="services_experience">Experience in developing web applications with the Laravel framework.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== SERVICES 3 ====================-->
+                <div class="services_content">
+                    <div>
+                        <i class="las la-plus-square services_icon"></i>
+                        <h3 class="services_title js-translate" data-string="services_others_title">Others</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services_button">
+                        <span class="js-translate" data-string="services_view_more_3">View More</span> 
+                        <i class="ri-arrow-right-line button_icon"></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <h4 class="services_modal-title js-translate" data-string="services_others_modal">Others</h4>
+                            <i class="las la-times services_modal-close"></i>
+
+                            <ul class="services_modal-services grid">
+                                <li class="services_modal-service">
+                                    <i class="las la-check-circle services_modal--icon"></i>
+                                    <p class="js-translate" data-string="services_editing">Psd & Ai file editing.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="las la-check-circle services_modal--icon"></i>
+                                    <p class="js-translate" data-string="services_office">Office Suite management.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="las la-check-circle services_modal--icon"></i>
+                                    <p class="js-translate" data-string="services_english">English language proficiency.</p>
+                                </li>
+                                <li class="services_modal-service">
+                                    <i class="las la-check-circle services_modal--icon"></i>
+                                    <p class="js-translate" data-string="services_problem">Problem-solving skills.</p> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section_title js-translate" data-string="portfolio_title">Portfolio</h2>
+            <span class="section_subtitle js-translate" data-string="portfolio_subtitle">Most recent work</span>
+
+            <div class="container">
+
+                <div class="gallery">
+        
+                    <div class="gallery-item effect-zoe">
+                        <img class="gallery-image"
+                        src="./img/AirTravel.jpg"
+                        alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                        <div class="image-content">
+                            <h3>Creative <span>Zoe</span></h3>
+                            <p class="icon-links">
+                                <a href="#"><i class="las la-eye"></i></a>
+                                <a href="#"><i class="lab la-github"></i></a>
+                            </p>
+                            <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
+                        </div>			
+                    </div>
+                    <div class="gallery-item effect-zoe">
+                        <img class="gallery-image"
+                        src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop"
+                        alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                        <div class="image-content">
+                            <h3>Creative <span>Zoe</span></h3>
+                            <p class="icon-links">
+                                <a href="#"><i class="las la-eye"></i></a>
+                                <a href="#"><i class="lab la-github"></i></a>
+                            </p>
+                            <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
+                        </div>			
+                    </div>
+        
+                    <div class="gallery-item effect-zoe">
+                        <img class="gallery-image"
+                        src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop"
+                        alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                        <div class="image-content">
+                            <h3>Creative <span>Zoe</span></h3>
+                            <p class="icon-links">
+                                <a href="#"><i class="las la-eye"></i></a>
+                                <a href="#"><i class="lab la-github"></i></a>
+                            </p>
+                            <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
+                        </div>			
+                    </div>
+        
+                    <div class="gallery-item effect-zoe">
+                        <img class="gallery-image"
+                        src="https://images.unsplash.com/photo-1514041181368-bca62cceffcd?w=500&h=500&fit=crop"
+                        alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                        <div class="image-content">
+                            <h3>Creative <span>Zoe</span></h3>
+                            <p class="icon-links">
+                                <a href="#"><i class="las la-eye"></i></a>
+                                <a href="#"><i class="lab la-github"></i></a>
+                            </p>
+                            <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
+                        </div>			
+                    </div>
+        
+                    <div class="gallery-item effect-zoe">
+                        <img class="gallery-image"
+                        src="https://images.unsplash.com/photo-1445810694374-0a94739e4a03?w=500&h=500&fit=crop"
+                        alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                        <div class="image-content">
+                            <h3>Creative <span>Zoe</span></h3>
+                            <p class="icon-links">
+                                <a href="#"><i class="las la-eye"></i></a>
+                                <a href="#"><i class="lab la-github"></i></a>
+                            </p>
+                            <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
+                        </div>			
+                    </div>
+        
+                    <div class="gallery-item effect-zoe">
+                        <img class="gallery-image"
+                        src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop"
+                        alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+                        <div class="image-content">
+                            <h3>Creative <span>Zoe</span></h3>
+                            <p class="icon-links">
+                                <a href="#"><i class="las la-eye"></i></a>
+                                <a href="#"><i class="lab la-github"></i></a>
+                            </p>
+                            <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
+                        </div>			
+                    </div>
+                </div>
+        
+            </div>
+
+        </section>
+
+        <!--==================== MOTIVATIONAL QUOTE ====================-->
+        <section class="project section">
+            <div class="project_bg">
+                <div class="project_container container grid">
+                    <div class="project_data">
+                        <br>
+                        <h2 class="project_title js-translate" data-string="motivational_quote">“The expert in anything was once a beginner.” </h2>
+                        <p class="project_description js-translate" data-string="motivational_autor">Helen Hayes.</p>
+                        <!-- <a href="#contact" class="button button--flex button--white">
+                            Contact Me
+                            <i class="las la-comment-alt button_icon"></i>
+                        </a> -->
+                    </div>
+
+                    <img src="./img/project.png" alt="" class="project_img">
+                </div>
+            </div>
+        </section>
+
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section_title js-translate" data-string="contact_me">Contact Me</h2>
+            <span class="section_subtitle js-translate" data-string="contact_get">Get in touch</span>
+
+            <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="lab la-telegram-plane contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title js-translate" data-string="contact_message">Message me</h3>
+                            <span class="contact_subtitle">@ArnaldoReyes</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="las la-envelope contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title js-translate" data-string="contact_email">Email Me</h3>
+                            <span class="contact_subtitle">arnaldoreyes13@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="las la-map-marked contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title js-translate" data-string="contact_location">Location</h3>
+                            <span class="contact_subtitle">Venezuela - Nueva Esparta</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact_form grid">
+                    <div class="contact_imputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label js-translate" data-string="contact_name">Name</label>
+                            <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Email</label>
+                            <input type="email" class="contact_input">
+                        </div>
+                    </div>
+                    <!-- <div class="contact_content">
+                        <label for="" class="contact_label">Project</label>
+                        <input type="text" class="contact_input">
+                    </div> -->
+                    <div class="contact_content">
+                        <label for="" class="contact_label js-translate" data-string="contact_text">Message</label>
+                        <textarea rows="7" cols="0" class="contact_input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">
+                            <span class="js-translate" data-string="contact_send">Send Message</span>
+                            <i class="las la-comment-alt button_icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Arnaldo Reyes</h1>
+                    <span class="footer_subtitle js-translate" data-string="footer_front">Front-End Developer</span>
+                </div>
+
+                <ul class="footer_links">
+                    <li>
+                        <a href="#services" class="footer_link js-translate" data-string="footer_services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer_link js-translate" data-string="footer_portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer_link js-translate" data-string="footer_contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer_socials">
+                    <a href="#" target="" class="footer_social">
+                        <i class="lab la-facebook"></i>
+                    </a>
+                    <a href="#" target="" class="footer_social">
+                        <i class="lab la-instagram"></i>
+                    </a>
+                    <a href="#" target="" class="footer_social">
+                        <i class="lab la-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer_copy js-translate" data-string="footer_end">&#169; Arnaldo Reyes. All right reserved.</p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="las la-arrow-up scrollup_icon"></i>
+    </a>
+
+    <!--==================== JS ====================-->
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/translate.js"></script>
     <script src="./js/script.js"></script>
+
 </body>
+
 </html>
