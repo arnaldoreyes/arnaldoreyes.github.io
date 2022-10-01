@@ -1048,7 +1048,7 @@ body.dark-theme .gallery-item h3 {
 }
 
 .contact_title a{
-    color: #000;
+    color: var(--text-color);
 }
 
 .contact_title a:hover{
