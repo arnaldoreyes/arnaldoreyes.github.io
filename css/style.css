@@ -940,10 +940,12 @@ display: none;
 	bottom: 6.5em;
 	padding: 1em;
 	color: #fff;
-	text-transform: none;
 	font-size: var(--smaller-font-size);
 	opacity: 0;
 	transition: opacity 0.35s;
+    text-transform: none;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px #000;
 }
 
 .gallery-item.effect-zoe h3,
